@@ -40,14 +40,14 @@ function listaProductos() {
     }
 }
 function productoYoga() {
-    let marca;
-    marca = prompt("Cuantos sesiones de yoga por semana deseas?\n1) Yoga 1\n2) Yoga 2\n3) Yoga 3\n4) Yoga 4")
-    marca = parseInt(marca)
+    let clase;
+    clase = prompt("Cuantos sesiones de yoga por semana deseas?\n1) Yoga 1\n2) Yoga 2\n3) Yoga 3\n4) Yoga 4")
+    clase = parseInt(clase)
     debugger
-    if (marca > 4 || marca < 0) {
+    if (clase > 4 || clase < 0) {
         alert("El numero ingresado es incorrecto.")
     }
-    switch (marca) {
+    switch (clase) {
         case 1:
             precio("Yoga 1");
             break
@@ -64,15 +64,15 @@ function productoYoga() {
     }
 }
 function productoMeditacion() {
-    let marca;
-    marca = prompt("Cuantas sesiones de meditacion por semana deseas?\n1) Meditacion 1\n2) Meditacion 2\n3) Meditacion 3 \n4) Meditacion 4\n5) Meditacion 5")
-    marca = parseInt(marca)
+    let clase;
+    clase = prompt("Cuantas sesiones de meditacion por semana deseas?\n1) Meditacion 1\n2) Meditacion 2\n3) Meditacion 3 \n4) Meditacion 4\n5) Meditacion 5")
+    clase = parseInt(clase)
 
-    if (marca > 5 || marca < 0) {
+    if (clase > 5 || clase < 0) {
         alert("El numero ingresado es incorrecto.")
     }
 
-    switch (marca) {
+    switch (clase) {
         case 1:
             precio("Meditacion 1");
             break
@@ -94,15 +94,15 @@ function productoMeditacion() {
 
 // Ejemplo a seguir
 function productoFunctional() {
-    let marca;
-    marca = prompt("Cuantas sesiones de Functional deseas?\n1) Functional 1\n2) Functional 2\n3) Functional 3\n4) Functional 4")
-    marca = parseint(marca)
-    if (marca > 4 || marca < 0) {
+    let clase;
+    clase = prompt("Cuantas sesiones de Functional deseas?\n1) Functional 1\n2) Functional 2\n3) Functional 3\n4) Functional 4")
+    clase = parseint(clase)
+    if (clase > 4 || clase < 0) {
         alert("El numero ingresado es incorrecto.")
     }
 
 
-    switch (marca) {
+    switch (clase) {
         case 1:
             precio("Functional 1");
             break
@@ -124,44 +124,44 @@ function productoFunctional() {
 // productoMeditacion()
 // productoFunctional()
 
-function precio(marca) {
-    if (marca === "Yoga 1") {
+function precio(clase) {
+    if (clase === "Yoga 1") {
         pagar(4000);
     }
-    else if (marca === "Yoga 2") {
+    else if (clase === "Yoga 2") {
         pagar(7500);
     }
-    else if (marca === "Yoga 3") {
+    else if (clase === "Yoga 3") {
         pagar(11000);
     }
-    else if (marca === "Yoga 4") {
+    else if (clase === "Yoga 4") {
         pagar(14500);
     }
-    else if (marca === "Meditacion 1") {
+    else if (clase === "Meditacion 1") {
         pagar(2000);
     }
-    else if (marca === "Meditacion 2") {
+    else if (clase === "Meditacion 2") {
         pagar(3800);
     }
-    else if (marca === "Meditacion 3") {
+    else if (clase === "Meditacion 3") {
         pagar(5400);
     }
-    else if (marca === "Meditacion 4") {
+    else if (clase === "Meditacion 4") {
         pagar(7400);
     }
-    else if (marca === "Meditacion 5") {
+    else if (clase === "Meditacion 5") {
         pagar(9000);
     }
-    else if (marca === "Functional 1") {
+    else if (clase === "Functional 1") {
         pagar(2500);
     }
-    else if (marca === "Functional 2") {
+    else if (clase === "Functional 2") {
         pagar(4700);
     }
-    else if (marca === "Functional 3") {
+    else if (clase === "Functional 3") {
         pagar(7000);
     }
-    else if (marca === "Functional 4") {
+    else if (clase === "Functional 4") {
         pagar(9200);
     }
 }
